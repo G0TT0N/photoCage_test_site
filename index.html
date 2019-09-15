@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>PhotoCage App</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="logo">
+            <a href="#"><span>Photo</span>Cage app</a>
+        </div>
+        <div class="menu">
+            <div class="menu_item">
+                <img src="img/icon1.png" alt=home>
+                <a href="#">Home</a>
+            </div>
+            <div class="menu_item">
+                <img src="img/icon2.png" alt=gallery>
+                <a class="gallery" href="#">Gallery</a>
+            </div>
+            <div class="menu_item">
+                <img src="img/icon3.png" alt=members>
+                <a href="#">Members</a>
+            </div>
+            <div class="menu_item">
+                <img src="img/icon4.png" alt=logout>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="upload">
+        <h1>Please select an image from your computer</h1>
+        <img id="upload_field" src="img/field.png" alt="field">
+        <label for="file-input">Browse</label>
+        <form id="upload-container" enctype="multipart/form-data" method="post" action="send.php">
+            <div>
+                <input id="file-input" name="file" type="file" multiple accept="image/*">
+            </div>
+        </form>
+        <a id="upload_img" href="#">Upload image</a>
+    </div>
+    <div class="content">
+        <div class="content_item">
+            <img src="img/img1.jpg" alt="img1">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png" alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img2.jpg" alt="img2">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png" alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img3.jpg" alt="img3">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png" alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img4.jpg" alt="img4">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png" alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img5.jpg" alt="img5">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img6.jpg" alt="img6">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img7.jpg" alt="img7">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png"
+                                                         alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img8.jpg" alt="img8">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png"
+                                                         alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3" src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4" src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img9.jpg" alt="img9">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1" src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2" src="img/face.png"
+                                                         alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3"
+                                                         src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4"
+                                                         src="img/telegram.png" alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img10.jpg" alt="img10">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1"
+                                                         src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2"
+                                                         src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3"
+                                                         src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4"
+                                                         src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img11.jpg" alt="img11">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit"></p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1"
+                                                         src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2"
+                                                         src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3"
+                                                         src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4"
+                                                         src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_item">
+            <img src="img/img12.jpg" alt="img12">
+            <div class="content_txt">
+                <p>Lorem Ipsum is simply<img src="img/favorit.png" alt="favorit">
+                </p>
+                <div class="social-content"><span class="share">Share</span>
+                    <div class="social-link1" data-title="share in twitter">
+                        <a href="#" target="_blank"><img class="social-img1"
+                                                         src="img/twitt.png"
+                                                         alt="twitt"></a>
+                    </div>
+                    <div class="social-link2" data-title="share in facebook">
+                        <a href="#" target="_blank"><img class="social-img2"
+                                                         src="img/face.png" alt="face"></a>
+                    </div>
+                    <div class="social-link3" data-title="share in pinterest">
+                        <a href="#" target="_blank"><img class="social-img3"
+                                                         src="img/pinterest.png"
+                                                         alt="pinterest"></a>
+                    </div>
+                    <div class="social-link4" data-title="share in telegram">
+                        <a href="#" target="_blank"><img class="social-img4"
+                                                         src="img/telegram.png"
+                                                         alt="telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2013 Photocage app powered by cssauthor.com</p>
+    </div>
+</div>
+</body>
+</html>
